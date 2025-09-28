@@ -3,16 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー</title>
+    <title>アプリサポート</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 2em auto; padding: 0 1em; }
-        h1 { text-align: center; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px; /* 上下の余白を追加 */
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px; /* 最大幅を指定 */
+            margin: 0 auto; /* 中央揃え */
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0 40px; /* 各セクションとの間に余白を確保 */
+        }
+        /* 各アプリのセクションのデザイン */
+        .app-section {
+            padding: 25px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        /* 最後の要素だけ下の余白をなくす */
+        .app-section:last-child {
+            margin-bottom: 0;
+        }
+        .app-section h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .app-section a {
+            font-size: 1.1em;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.2s;
+            display: inline-block; /* クリック範囲を広げる */
+            padding: 8px 16px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .app-section a:hover {
+            color: #fff;
+            background-color: #0056b3;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <h1>プライバシーポリシー</h1>
-    <p>未完成のプライバシーポリシーです。</p>
-    <h2>第1条（個人情報）</h2>
-    <p>「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし...</p>
-    </body>
+    <div class="container">
+        <h1>アプリ サポート</h1>
+        <p>各アプリのプライバシーポリシーやサポート情報はこちらからご確認ください。</p>
+
+        <div class="app-section">
+            <h2>メールショートカット作成</h2>
+            <a href=".\PrivacyPolicies\MailShortcutMaker_Policy.html">プライバシーポリシーはこちら</a>
+        </div>
+        <!--
+        <div class="app-section">
+            <h2>新しいアプリ名</h2>
+            <a href=".\PrivacyPolicies\NewApp_Policy.html">プライバシーポリシーはこちら</a>
+        </div>
+
+        <div class="app-section">
+            <h2>別のアプリ名</h2>
+            <a href=".\PrivacyPolicies\AnotherApp_Policy.html">プライバシーポリシーはこちら</a>
+        </div>
+        -->
+        
+    </div>
+</body>
 </html>

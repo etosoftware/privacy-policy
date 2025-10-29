@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - B2902B MeasApp</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        p, li {
+            font-size: 1em;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .date {
+            text-align: right;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        .important-note {
+            background-color: #e6f7ff;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プライバシーポリシー</h1>
+        <p class="date">
+            制定日: 2025年10月29日
+        </p>
+
+        <p><strong>Eto Software</strong>（以下、「当方」）は、提供するWindowsデスクトップアプリケーション「B2902B MeasApp WinUI3」（以下、「本アプリ」）におけるユーザーの情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」）を定めます。</p>
+
+        <div class="important-note">
+            <p><strong>本アプリは、ユーザーの情報を外部のサーバー（当方を含む）に送信することは一切ありません。すべてのデータはユーザーのコンピュータ（PC）内で完結します。</strong></p>
+        </div>
+
+        <h2>第1条（取得・保存する情報と利用目的）</h2>
+        <p>本アプリは、測定器の制御および測定結果の保存のために、以下の情報をユーザーのPC内に保存します。</p>
+
+        <h3>1. 測定器の通信アドレス</h3>
+        <ul>
+            <li><strong>情報:</strong> ユーザーが入力、またはスキャン機能で取得した測定器のVISAリソースアドレス。</li>
+            <li><strong>利用目的:</strong> 測定器（Keysight B2902B）と通信するために利用します。</li>
+            <li><strong>保存場所:</strong> ユーザーのPC内の `AppData\Roaming\B2902B_MeasApp_WinUI3` フォルダ内の設定ファイル（Settings.ini）。</li>
+        </ul>
+
+        <h3>2. 測定条件の設定</h3>
+        <ul>
+            <li><strong>情報:</strong> ユーザーが設定した測定条件（電圧、電流、ステップ数、パルス設定、サンプリング設定など）。</li>
+            <li><strong>利用目的:</strong> 測定を実行するため、および次回起動時に設定を復元するために利用します。</li>
+            <li><strong>保存場所:</strong> ユーザーのPC内の `AppData\Roaming\B2902B_MeasApp_WinUI3` フォルダ内の設定ファイル（Settings.ini, SamplingSettings.ini, SweSampSettings.json）。</li>
+        </ul>
+
+        <h3>3. 測定データ</h3>
+        <ul>
+            <li><strong>情報:</strong> 測定器から取得した測定結果（電圧、電流、時間データなど）。</li>
+            <li><strong>利用目的:</strong> ユーザーが測定結果を確認・分析できるようにするため。</li>
+            <li><strong>保存場所:</strong> 測定実行時にユーザーが明示的に指定したPC内のフォルダに、テキストファイル（.txt）として保存されます。</li>
+        </ul>
+
+        <h2>第2条（情報の送信）</h2>
+        <p>本ポリシーの第1条で記載されたすべての情報（通信アドレス、設定、測定データ）は、ユーザーのPC内にのみ保存・処理されます。</p>
+        <p><strong>これらの情報が、インターネットを経由して当方開発者や第三者のサーバーに自動的に送信されたり、収集されたりすることは一切ありません。</strong></p>
+
+        <h2>第3条（広告・分析）</h2>
+        <p>本アプリは、広告配信（AdMobなど）や利用状況の分析（Firebase Analyticsなど）のためのサードパーティ製SDKを一切使用していません。</p>
+        
+        <h2>第4条（ユーザーの権利）</h2>
+        <p>本アプリが保存した設定情報（第1条 1項・2項）を削除したい場合は、以下のフォルダを手動で削除してください。</p>
+        <p><code>C:\Users\[ユーザー名]\AppData\Roaming\B2902B_MeasApp_WinUI3</code></p>
+        <p>測定データ（第1条 3項）は、ユーザーが保存を指定したフォルダから直接削除してください。</p>
+
+        <h2>第5条（プライバシーポリシーの変更）</h2>
+        <p>当方は、機能の変更等に応じて、本ポリシーを改定することがあります。最新のプライバシーポリシーは、常に本ページでご確認いただけます。</p>
+
+        <h2>第6条（お問い合わせ窓口）</h2>
+        <p>本ポリシーに関するお問い合わせは、下記の連絡先までお願いいたします。</p>
+        <div class="contact-info">
+            <p><strong>Eto Software</strong></p>
+            <p><strong>連絡先メールアドレス: eto.software.dev@gmail.com</strong></p>
+        </div>
+        
+        <a href="..\index.html" class="back-link">← アプリ一覧へ戻る</a>
+    </div>
+</body>
+</html>

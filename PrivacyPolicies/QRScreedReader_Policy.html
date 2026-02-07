@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - QR Screen Reader</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        p, li {
+            font-size: 1em;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .date {
+            text-align: right;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        .important-note {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プライバシーポリシー</h1>
+    <p class="date">
+        制定日: 2026年2月8日
+    </p>
+
+    <p><strong>Eto Software</strong>（以下、「当方」）は、提供するAndroidアプリケーション「<strong>QR Screen Reader</strong>」（以下、「本アプリ」）におけるユーザーのプライバシー情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」）を定めます。</p>
+
+    <h2>第1条（取得する情報と利用目的）</h2>
+    <p>本アプリで取得・利用する情報は以下のとおりです。</p>
+    
+    <h3>1. 画面上のコンテンツ情報（スクリーンキャプチャ）</h3>
+    <ul>
+        <li><strong>取得情報:</strong> ユーザーが本アプリの機能を利用してキャプチャした画面の画像データ。</li>
+        <li><strong>取得方法:</strong> AndroidのMediaProjection API（画面キャスト機能）を通じて取得します。</li>
+        <li><strong>利用目的:</strong> 画面上に表示されているQRコードを解析・読み取るためにのみ利用します。</li>
+    </ul>
+    <div class="important-note">
+        <p><strong>【重要】画面データの取り扱いについて</strong><br>
+        取得した画像データは、デバイス内のメモリ上でQRコードの解析処理を行った直後に<strong>即座に破棄されます</strong>。<br>
+        <strong>これらの画像データが当方のサーバーや第三者に送信されたり、デバイス内のストレージに保存されたりすることは一切ありません。</strong></p>
+    </div>
+
+    <h3>2. 広告配信のために収集される情報</h3>
+    <p>本アプリでは、広告配信ツールとしてGoogle AdMobを利用しており、広告表示のために以下の情報がGoogleにより自動的に収集される場合があります。</p>
+    <ul>
+        <li><strong>取得情報:</strong> 広告ID (AAID)、IPアドレス、Cookie情報、デバイス情報（OSバージョン、端末モデル等）、閲覧・行動履歴など</li>
+        <li><strong>取得方法:</strong> Google AdMob SDKによる自動取得</li>
+        <li><strong>利用目的:</strong> ユーザーに適した広告の表示、広告効果の測定、およびサービス改善のため。</li>
+        <li>Googleが収集する情報の詳細や無効化（オプトアウト）については、以下のGoogleのポリシーをご確認ください。
+            <ul>
+                <li>Google ポリシーと規約: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>第2条（必要な権限と利用目的）</h2>
+    <p>本アプリは機能提供のために、Androidシステムに対して以下の権限を要求します。</p>
+    
+    <h3>1. 他のアプリの上に重ねて表示 (SYSTEM_ALERT_WINDOW)</h3>
+    <p>他のアプリを使用中に、QRコード読み取り用のオーバーレイボタンを表示するために使用します。</p>
+
+    <h3>2. 画面の録画・キャスト (FOREGROUND_SERVICE_MEDIA_PROJECTION)</h3>
+    <p>画面上のQRコードを読み取るために、一時的に画面の内容を取得するために使用します。ユーザーが明示的に許可した場合のみ動作します。</p>
+
+    <h2>第3条（情報の第三者提供）</h2>
+    <p>当方は、以下の場合を除き、ユーザーの同意なく個人情報を第三者に提供しません。</p>
+    <ol>
+        <li>法令に基づく場合</li>
+        <li>人の生命、身体または財産の保護のために必要がある場合</li>
+        <li>第1条2項に記載の広告配信事業者（Google）が、広告配信の目的で情報を自動取得する場合</li>
+    </ol>
+
+    <h2>第4条（安全管理）</h2>
+    <p>当方は、ユーザーのプライバシーを尊重し、取得した画面データが意図しない目的で利用されないよう、以下の対策を講じています。</p>
+    <ul>
+        <li>画面キャプチャデータは、QRコード解析のための一時メモリ展開のみに使用し、永続的なストレージへの保存は行いません。</li>
+        <li>解析処理はすべてユーザーのデバイス内部（ローカル）で完結し、外部通信を行いません。</li>
+    </ul>
+
+    <h2>第5条（プライバシーポリシーの変更）</h2>
+    <p>当方は、法令の改正やアプリの機能変更等に応じて、本ポリシーを改定することがあります。重要な変更があった場合は、アプリ内等で通知いたします。最新のプライバシーポリシーは、常に本ページでご確認いただけます。</p>
+
+    <h2>第6条（お問い合わせ窓口）</h2>
+    <p>本ポリシーに関するお問い合わせは、下記の連絡先までお願いいたします。</p>
+    <div class="contact-info">
+        <p><strong>Eto Software</strong></p>
+        <p>連絡先メールアドレス: <a href="mailto:eto.software.dev@gmail.com">eto.software.dev@gmail.com</a></p>
+    </div>
+    
+    <a href="..\index.html" class="back-link">← アプリ一覧へ戻る</a>
+    </div>
+</body>
+</html>
